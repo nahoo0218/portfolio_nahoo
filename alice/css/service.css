@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+
+
+section div.flex{
+    justify-content: center;
+    gap: 18px;
+}
+
+main{
+    text-align: center;  
+}
+
+
+h2{
+    color: #983232;
+    font-size: 32px;
+    line-height: 1.2;
+}
+.fukidashi {
+    text-align: center;
+    display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #983232;
+  background-color:transparent;
+  box-sizing: border-box;
+  width: fit-content;
+  margin-bottom: 20px;
+  
+
+}
+.fukidashi::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  background-color: #F1EFEE; /* 背景色と同じ色を指定 */
+  rotate: 135deg;
+  translate: -50%;
+}
+.fukidashi::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  z-index: -1;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: #983232 #983232 transparent transparent;
+  background-color: transparent;
+  rotate: 135deg;
+  translate: -50%;
+}
+
+section .text{
+    line-height: 2;
+    margin-bottom: 110px;
+}
+
+h3{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 36px;
+}
+h4{
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 42px;
+    background-color: #543010;
+    color: #fff;
+}
+h4,.cases .eng{
+    padding-left: 7px;
+}
+
+
+.cases .num{
+    color: #543010;
+   font-size:30px;
+    font-family: 游明朝;
+    height: 63.5px;
+    line-height: 67px;
+     background-image: url(../images/rabbit_small.svg);
+    background-repeat: no-repeat;
+    background-position: -2px top;
+
+}
+.case{
+    align-items: end;
+    margin-bottom: 87px;
+}
+/* スライドイン */
+.case {
+  opacity: 0; 
+}
+
+.case.slidein {
+  animation: slidein 3s forwards;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.case:nth-child(2) {
+  animation-delay: 0s;
+}
+.case:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.case:nth-child(4) {
+  animation-delay: 1s;
+}
+.case:nth-child(5) {
+  animation-delay: 1.5s;
+}
+.case:nth-child(6) {
+  animation-delay: 2s;
+}
+.case:nth-child(7) {
+  animation-delay: 2.5s;
+}
+
+/* ここまで */
+
+
+.case span{
+   font-size:3em;
+   margin-left: 5px;
+
+}
+.cases .eng{
+    color: #543010;
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+}
+.case div{
+    width: 380px;
+    border: 1px solid #000;
+    text-align: left;
+    box-sizing: border-box;
+
+}
+
+.case:last-child div{
+    margin-bottom: 0;
+}
+.case:last-child{
+    align-items: flex-start;
+
+}
+.case:last-child .num{
+    line-height:67px;
+}
+
+
+
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .inner {
+    width: auto;
+  }
+
+  .flex {
+    display: block;
+  }
+
+section{
+  overflow: hidden;
+  margin: 0 20px;
+   width: auto;
+}
+
+  section .text{
+    line-height: 1.7;    
+    margin-bottom: 50px;
+}
+/* .fukidashi{
+  width: auto;
+} */
+
+h4{
+
+    font-size: 24px;
+    line-height: 42px;
+}
+.cases div.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.case div{
+    width: 100%;
+    margin: auto;
+}
+.case{
+  margin-bottom: 50px;
+}
+}

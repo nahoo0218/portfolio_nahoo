@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+.headlineGroup {
+  text-align: right;
+  margin-bottom: 112px;
+}
+
+.headlineEn {
+  font-size: 90px;
+  letter-spacing: -0.03em;
+  line-height: 80px;
+  color: #000;
+  position: relative;
+}
+
+.headlineEn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transform: translateY(-9px);/* winだと-9pxで大丈夫だけどmacだと17px */
+}
+
+.headlineJa {
+  font-size: 32px;
+  line-height: 32px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #000;
+}
+
+
+
+.recruitText {
+
+}
+
+.recruitText__headline {
+  font-size: 76px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  color: #000;
+}
+
+.recruitText__headline--light {
+  font-weight: 100;
+}
+
+.bracketsL {
+  margin-left: -0.5em;
+}
+
+.bracketsR {
+  margin-right: -0.5em;
+}
+
+.smooth {
+  clip-path: inset(0 100% 0 0);
+  display: inline-block;
+  transition: 1.4s cubic-bezier(0.37, 0, 0.63, 1);
+  transition-property: clip-path;
+}
+.smooth.is-active {
+  clip-path: inset(0);
+}
+
+.recruitText__lead {
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 72px;
+  letter-spacing: 0.1em;
+}
+
+.js-text-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.4s ease, transform 1.4s ease;
+}
+
+.js-text-animate.is-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.recruitInfo {
+  background-color: #983232;
+  width: 420px;
+  padding: 20px 0;
+  margin-left: auto;
+  margin-top: 128px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.recruitInfo::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/rabbit_recruit.svg);
+  background-repeat: no-repeat;
+  width: 474px;
+  height: 300px;
+  top: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+}
+
+.recruitInfo__text {
+  color: #fff;
+}
+
+.recruitInfo__message {
+  font-size: 13px;
+  line-height: 26px;
+}
+
+.recruitInfo__recruiter {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.recruitInfo__contact {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  padding-left: 4em;
+  text-indent: -4em;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  /* img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .inner {
+    width: auto;
+  }
+
+  .flex {
+    display: block;
+  } */
+
+  .headlineGroup {
+    margin-right: 5%;
+    margin-bottom: 80px;
+  }
+
+  .headlineEn {
+    font-size: calc(90px * 0.7);
+  }
+
+  .headlineJa {
+    font-size: calc(32px * 0.7);
+    margin-top: -10px;
+  }
+
+  .headlineEn::after {
+    width: calc(100% + 5%);
+    transform: translateY(-19px);
+  }
+
+  .recruitText {
+    padding: 0 5%;
+  }
+
+  .recruitText__headline {
+    font-size: 30px;
+  }
+
+  .recruitText__lead {
+    font-size: 13.5px;
+    line-height: 27px;
+  }
+
+  .recruitInfo {
+    width: auto;
+    margin-top: 160px;
+    padding: 20px 15px;
+  }
+
+  .recruitInfo::before {
+    background-size: contain;
+    width: 250px;
+    height: calc(250px * 300 / 474);
+    top: calc(-1 * (250px * 300 / 474));
+  }
+
+}

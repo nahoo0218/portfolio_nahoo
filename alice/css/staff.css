@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+
+
+
+main section {
+  width: 300px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: 游明朝;
+  font-weight: normal;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+.orange h2,
+.orange p {
+  color: #D5B380;
+}
+
+.blue h2,
+.blue p {
+  color: #2194A5;
+}
+
+/* ぽよんと */
+
+
+.poyon {
+  animation: poyon 1s ease-in-out forwards;
+}
+
+.poyon:hover{animation: poyon 1s ease-in-out forwards;
+
+}
+
+@keyframes poyon {
+  0% {
+    transform: scale(1.0, 1.0) translate(0, 0);
+  }
+
+  15% {
+    transform: scale(0.98, 0.9) translate(0, 5px);
+  }
+
+  30% {
+    transform: scale(1.02, 1.0) translate(0, 8px);
+  }
+
+  50% {
+    transform: scale(0.98, 1.05) translate(0, -8px);
+  }
+
+  70% {
+    transform: scale(1.0, 0.9) translate(0, 5px);
+  }
+
+  100% {
+    transform: scale(1.0, 1.0) translate(0, 0);
+  }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* ここまで */
+
+/* 吹き出し */
+.fukidashi {
+  display: inline-block;
+  position: relative;
+  padding: 12px 0px;
+  border-bottom: 2px solid #333333;
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 170px;
+
+}
+
+.fukidashi::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  background-color: #F1EFEE;
+  /* 背景色と同じ色を指定 */
+  rotate: 135deg;
+  translate: -50%;
+}
+
+.fukidashi::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  z-index: -1;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: #333333 #333333 transparent transparent;
+  background-color: transparent;
+  rotate: 135deg;
+  translate: -50%;
+}
+
+/* 吹き出しベージュ */
+.orange .fukidashi {
+  position: relative;
+  padding: 12px 0px;
+  border-bottom: 2px solid #D5B380;
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 170px;
+
+
+}
+
+.orange .fukidashi::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  background-color: #F1EFEE;
+  /* 背景色と同じ色を指定 */
+  rotate: 135deg;
+  translate: -50%;
+}
+
+.orange .fukidashi::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  z-index: -1;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: #D5B380 #D5B380 transparent transparent;
+  background-color: transparent;
+  rotate: 135deg;
+  translate: -50%;
+}
+
+/* 吹き出しブルー */
+.blue .fukidashi {
+  position: relative;
+  padding: 12px 0px;
+  border-bottom: 2px solid #2194A5;
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 170px;
+
+
+}
+
+.blue .fukidashi::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  background-color: #F1EFEE;
+  /* 背景色と同じ色を指定 */
+  rotate: 135deg;
+  translate: -50%;
+}
+
+.blue .fukidashi::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  z-index: -1;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: #2194A5 #2194A5 transparent transparent;
+  background-color: transparent;
+  rotate: 135deg;
+  translate: -50%;
+}
+
+
+
+
+section p {
+  margin-top: 15px;
+}
+
+section .text {
+  color: #fff;
+  line-height: 2;
+  padding: 43px 0 55px;
+}
+
+.orange .text {
+  background-color: #D5B380;
+}
+
+
+.black .text {
+  background-color: #333333;
+}
+
+.blue .text {
+  background-color: #2194A5;
+}
+
+.blue figure {
+  margin-top: 156px;
+}
+
+.black figure {
+  margin-top: 2px;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  main section {
+    width: auto;
+  }
+
+  .blue figure {
+    margin-top: 0;
+  }
+
+  .black {
+    margin-top: 85px;
+  }
+
+  .blue {
+    margin-top: 85px;
+  }
+}

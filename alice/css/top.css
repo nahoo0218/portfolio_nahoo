@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+
+h2, .title p{
+    margin-left: 30px;
+    color: #000;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.7;
+    border-bottom: 1px solid #000;
+    padding: 25px 0 18px ;
+    width: 555px;
+    letter-spacing: 6px;
+}
+.title{
+    background-image:url(../images/top_decoration.svg);
+    background-repeat: no-repeat;
+    height: 210px;
+    margin-bottom: 50px
+   
+}
+
+.title p{
+    font-size: 12px;
+    line-height: 18px;
+    padding: 17px 0 
+}
+
+
+figure{
+    background-image: url(../images/ooka_decoration.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-bottom: 310px;
+}
+
+
+.about .left{
+    width: 464px;
+    background-image: url(../images/rabbit.svg);
+    background-repeat: no-repeat;
+    background-position:  left 80px;
+    text-align: right;
+}
+.js-text-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.4s ease, transform 1.4s ease;
+}
+
+.js-text-animate.is-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.about .left a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.about .left p{
+    font-family: 游明朝 ;
+    font-size: 24px;  
+    padding: 15px 10px;
+  position: relative;
+  display: inline-block;
+  width: 240px;
+  border-radius: 10px;
+  background-color: #983232;
+  text-align: center;
+  line-height: 1.5;
+  color: #ffffff;
+height: 80px;
+  box-sizing: border-box;
+  margin-top: 70px;
+}
+
+.about .left p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 32%;
+  border-style: solid;
+  border-width: 26px 13px 0 13px;
+  border-color: #983232 transparent transparent;
+  translate: -50% 100%;
+  transform: skew(-37deg);
+  transform-origin: top;
+} 
+
+.about span{
+    font-size: 14px;
+    display: block;
+    line-height: 1;
+    letter-spacing: normal;
+}
+
+main .about div.flex{
+    flex-direction: column;
+    gap: 30px;
+}
+.right{
+
+    margin-top:-60px;
+}
+
+.about .right p{
+    width: 420px;
+    line-height: 32px;
+border: 1px solid #907854;
+border-left:10px solid #543010; 
+padding: 10px 20px;
+box-sizing: border-box;
+background-color: #ffffff;
+
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .inner {
+    width: auto;
+  }
+
+  .flex {
+    display: block;
+  }
+
+h2 {
+      width: auto;
+    font-size: 18px;
+        letter-spacing: 2px;
+           padding: 19px 0 13px ;
+    line-height: 1.7;    
+}
+
+h2, .title p{
+    margin-left: 10px;
+    color: #000;
+}
+.title p{
+    font-size: 10px;
+    line-height: 18px;
+    padding: 10px 0 ;
+       line-height: 1.5;
+}
+.title{
+    background-image:url(../images/top_decoration.svg);
+    background-size: 35%;
+  width: auto;   
+}
+figure{
+      width: auto;
+      text-align: center;
+        background-image: url(../images/ooka_decoration.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    padding-bottom: 140px;
+}
+  
+main .about div.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+main div.flex{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.about .left{
+    width: 90%;
+    margin: auto;
+    background-image: url(../images/rabbit.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center bottom;
+    height: 350px;
+
+}
+.about .left p {
+    margin-top: 30px;
+    display: block; 
+ width: 100%;
+}
+
+.about .left p::after {
+    content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-style: solid;
+  border-width:  26px 13px 0 13px;
+  border-color: #983232 transparent transparent;
+  translate: -50% 100%;
+  transform: none;
+
+
+} 
+
+.about .right p{
+
+    width: 90%;
+    margin: auto;
+    line-height: 1.5;
+border: 1px solid #907854;
+border-left:5px solid #543010; 
+padding: 5px 10px;
+box-sizing: border-box;
+}
+}

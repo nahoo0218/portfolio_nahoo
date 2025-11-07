@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol,
+figure,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+body {
+  font-size: 16px;
+  color: #4f4f4f;
+  line-height: 2;
+  font-family: "游ゴシック", "游ゴシック体", "Yu Gothic", sans-serif;/* mac用に"游ゴシック体"追加 */
+  background-color: #f4f4f4;
+}
+.test_wrap {
+  padding: 20px;
+  overflow-x: scroll;
+   text-align: center;
+}
+.test_flex {
+  font-size: 40px;
+  display: inline-flex;
+  gap: 50px;
+  flex-wrap: nowrap;
+}
+.inner {
+  width: 960px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+/* header */
+header {
+  margin: 60px 0 85px;
+
+}
+
+header div.flex {
+  align-items: center;
+}
+
+/*  */
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  /* text-align: right; */
+}
+
+nav .pc li {
+  background-color: #000;
+  width: 60px;
+  font-size: 12px;
+  /* color: #f4f4f4; */
+  /* line-height: 2em; */
+  text-align: center;
+  /* text-decoration: none; */
+  font-weight: bold;
+  border-radius: 15px;
+  padding: auto;
+  gap: 10px;
+  transition: .5s;
+}
+
+nav li a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 12px;
+}
+
+nav .pc li:hover {
+  background-color: #983232;
+  /* color: #fff; */
+}
+
+
+/* nav li a:hover {
+  color: #fff;
+  width: 60px;
+  height: 20px;
+} */
+
+
+
+
+
+/* footer */
+
+footer {
+  background-color: #000;
+  color: #f4f4f4;
+  display: flex;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+footer div.flex {
+  align-items: center;
+  gap: 20px;
+}
+
+.logo_footer {
+  /* margin: 30px 30px 30px 0; */
+  align-items: center;
+}
+
+.copyright {
+  /* text-align: center; */
+  font-size: 12px;
+  /* line-height: 8.5em; */
+  text-align: center;
+}
+
+.icon_list {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #f4f4f4;
+  display: flex;
+  text-decoration: none;
+  font-size: 2em;
+  align-items: center;
+  gap: 10px;
+  line-height: 1;
+}
+
+.fa-x-twitter,
+.fa-square-instagram,
+.fa-youtube {
+  color: #f4f4f4;
+  /* margin-left: 5px; */
+}
+
+.btn-trigger {
+  display: none;
+  position: absolute;
+	top: 20px;
+	right: 10px;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 10px 10px;
+  border: none;
+}
+.btn-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 5px;
+	transition: all .5s;
+}
+.btn-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.btn-trigger span:nth-of-type(2) {
+  top: 50%;
+	translate: 0 -50%;
+}
+.btn-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+/*=============================
+アニメーション
+=============================*/
+.btn-trigger.active span:nth-of-type(1) {
+  translate: 0 -50%;
+  rotate: -45deg;
+  top: 50%;
+}
+.btn-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.btn-trigger.active span:nth-of-type(3) {
+  translate: 0 -50%;
+  rotate: 45deg;
+  top: 50%;
+}
+
+
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .inner {
+    width: auto;
+  }
+
+  .flex {
+    display: block;
+  }
+header {
+  margin: 10px 0 55px;
+
+}
+  header h1 {
+  margin:0 0 10px 10px;
+    width: 65%;
+    height: 65%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  gap: 0;
+    background-color: #000;
+    
+  }
+  nav .sp li {
+    background-color: transparent;
+  width: 100%;
+  font-size: 20px;
+line-height: 3.5;
+  text-align: center;
+  border-radius: 0%;
+  border-bottom:1px solid #fff;
+
+}
+nav .pc{
+  display: none;
+}
+.btn-trigger{
+  display: block;
+}
+
+  .icon_list {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

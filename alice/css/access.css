@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+.headlineGroup {
+  text-align: right;
+  margin-bottom: 112px;
+}
+
+.headlineEn {
+  font-size: 90px;
+  letter-spacing: -0.03em;
+  line-height: 80px;
+  color: #000;
+  position: relative;
+}
+
+.headlineEn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transform: translateY(-9px);
+  /* winだと-9pxで大丈夫だけどmacだと17px */
+}
+
+.headlineJa {
+  font-size: 32px;
+  line-height: 32px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #000;
+}
+
+
+
+/* access */
+
+
+.slider {
+  height: 53vw;
+  margin-inline: auto;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.slick-img img {
+  width: 100%;
+}
+
+/* ズームアニメーション */
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.add-animation img {
+  animation: zoomUp 10s linear both;
+}
+
+.section .right_flex {
+  display: flex;
+  line-height: 2;
+  height: 400px;
+  align-items: flex-end;
+  margin-top: 100px;
+}
+
+
+.map {
+  display: flex;
+  /* Flexコンテナに設定 */
+  align-items: flex-end;
+  /* 子要素を下揃えに配置 */
+  gap: 40px;
+  /* 地図とテキストの間にスペースを空ける */
+}
+
+.map iframe {
+  /* position: absolute; を削除する */
+  /* left: 0; を削除する */
+  margin-top: 100px;
+  width: 400px;
+  height: 292px;
+}
+
+h3 {
+  font-size: 32px;
+  margin: 0 0 40px 0;
+  /* 不要な margin を削除 */
+}
+
+.text {
+  line-height: 1.7em;
+  margin: 0;
+}
+.about {
+  display: flex;
+  justify-content: left;
+  /* コンテンツを中央寄せ */
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .inner {
+    width: auto;
+  }
+
+  .flex {
+    display: block;
+  } 
+
+  .headlineGroup {
+    margin-right: 5%;
+    margin-bottom: 80px;
+  }
+
+  .headlineEn {
+    font-size: calc(90px * 0.7);
+  }
+
+  .headlineJa {
+    font-size: calc(32px * 0.7);
+    margin-top: -10px;
+  }
+
+  .headlineEn::after {
+    width: calc(100% + 5%);
+    transform: translateY(-19px);
+  }
+
+   .slider {
+  width: 100vw;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.slick-img img {
+  width: 100%;
+}
+
+  .map {
+    display: block;
+    /* Flexを打ち消す */
+  }
+  .contact-info{
+    text-align: center;
+  }
+  h3 {
+  font-size: 32px;
+  margin: 0;
+}
+.text {
+  display: inline-block;
+  line-height: 1.7em;
+  text-align: left;
+  font-size: 4vw;
+  
+}
+
+  .right_flex .about.flex {
+    flex-direction: column;
+    text-align: center;
+ }
+
+
+  .map iframe {
+    margin-top: 10%;
+    width: 80%;
+    align-items: auto;
+  }
+
+}

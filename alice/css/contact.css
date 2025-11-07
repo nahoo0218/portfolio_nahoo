@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+.headlineGroup {
+  text-align: right;
+  margin-bottom: 112px;
+}
+
+.headlineEn {
+  font-size: 90px;
+  letter-spacing: -0.03em;
+  line-height: 80px;
+  color: #000;
+  position: relative;
+}
+
+.headlineEn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transform: translateY(-9px);
+  /* winだと-9pxで大丈夫だけどmacだと17px */
+}
+
+.headlineJa {
+  font-size: 32px;
+  line-height: 32px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #000;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 48px;
+  border-bottom: 10px solid #983232;
+  margin-bottom: 30px;
+}
+
+
+h4 {
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 70px;
+
+}
+
+form {
+  width: 480px;
+  margin-top: 90px;
+}
+
+section p {
+  margin-bottom: 45px;
+}
+
+form dt {
+  font-weight: bold;
+}
+
+.contact span {
+  font-size: 11px;
+  color: #983232;
+  margin-left: 5px;
+
+}
+
+.contact input {
+  width: 480px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+.contact textarea {
+  height: 300px;
+  width: 480px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+.contact dd {
+  margin-bottom: 15px;
+}
+
+.contact .alert {
+  font-size: 12px;
+  line-height: 20px;
+  color: #983232;
+}
+
+form .check {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+form .agree {
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+form .checkbox_icon {
+
+  width: 30px;
+  height: 30px;
+  border-radius: 0%;
+  top: 8px;
+  position: relative;
+
+}
+
+form .agree .alert {
+  font-size: 12px;
+  line-height: 20px;
+  color: #983232;
+  font-weight: normal;
+}
+
+#submitBtn {
+  color: #fff;
+  background-color: #000;
+  border: 0;
+  border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  font-size: 24px;
+  padding: 5px 22px;
+  font-weight: bold;
+  letter-spacing: 5px;
+
+}
+
+#submitBtn:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .headlineGroup {
+    margin-right: 5%;
+    margin-bottom: 80px;
+  }
+
+  .headlineEn {
+    font-size: calc(90px * 0.7);
+  }
+
+  .headlineJa {
+    font-size: calc(32px * 0.7);
+    margin-top: -10px;
+  }
+
+  .headlineEn::after {
+    width: calc(100% + 5%);
+    transform: translateY(-19px);
+  }
+
+  .textBlock {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  section p {
+    padding-left: 5%;
+    display: inline-block;
+  }
+
+  form {
+    width: 100%;
+    margin-top: 90px;
+    padding: 0 5%;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 100%;
+  }
+}
