@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+.nav1{
+    background-image: url(../images/bg_title.png);
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    background-size: contain;
+}
+
+.page_nav ul li{
+    position: relative;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 3px;
+    margin: 0 0 0 25px;
+    line-height: 1.7;
+    background-color: #FF931E;
+    border-radius: 0 20px 0 0;
+    list-style: none;
+    width: 90px;
+    text-align: center;
+}
+.page_nav ul.flex{
+    justify-content:center;
+    gap: 10%;
+    margin: 0 0 50px;
+}
+.page_nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.page_nav ul li:hover li {
+    background-image: url(../images/finger.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about .midashi{
+    padding: 20px 0 50px;
+}
+main .about .midashi h2 {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.4;
+    color: #FF931E;
+}
+.about .midashi h2:last-child .char1,
+.about .midashi h2:last-child .char2,
+.about .midashi h2:last-child .char3,
+.about .midashi h2:last-child .char4,
+.about .midashi h2:last-child .char5,
+.about .midashi h2:last-child .char6,
+.about .midashi h2:last-child .char7,
+.about .midashi h2:last-child .char8,
+.about .midashi h2:last-child .char9,
+.about .midashi h2:last-child .char10,
+.about .midashi h2:last-child .char11,
+.about .midashi h2:last-child .char12
+{
+    color: #405D88;
+}
+video {
+    display: block;
+    margin: 0 0 0 auto;
+}
+.video video {
+    width: 100%;
+}
+div.inner{
+    background-image: url(../images/about_bg.svg);
+    background-repeat: no-repeat;
+    background-position: 250px 370px;
+    background-size: 55%;
+
+}
+.about .tate{
+    display: flex;
+    justify-content: end;
+    gap: 38px;
+    padding-top: 10px;
+}
+.about .tate li{
+    color: #405D88;
+    letter-spacing: 1px;
+    list-style: none;
+    writing-mode: vertical-rl;
+}
+.about .white{
+    color: #FF931E;
+    font-size: 20px;
+    margin: 30px 0;
+    line-height: 2.4;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.about .white span{
+    color: #405D88;
+}
+.about .engbox{
+    letter-spacing: 2px;
+    background-image: url(../images/about_park.jpg),url(../images/about_seafood.png);
+    background-position: 45px top,640px bottom;
+    color: #405D88;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 15px 0  300px 460px;
+}
+.about .engbox p:last-child{
+    margin-top: 20px;
+}
+.about .textbox p:last-child{
+    margin-top: 40px;
+}
+.video_wrap {
+    gap: 30px;
+}
+.about .textbox{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #FF931E;
+    line-height: 2.4;
+    text-align: center;
+}
+.background-slide-in {
+    background-image: url(../images/about_wave.png);
+    background-position: left bottom;
+    background-size: contain;
+    min-height: 150px;
+    width: 80%;
+    margin: 10px 0; 
+    opacity: 0;
+}
+.about .engbox{
+display: none;
+}
+.nami {
+    padding: 40px;
+    color: transparent;
+}
+.timefee {
+    padding: 80px 0;
+    background-image: url(../images/about_mikan.png);
+    background-repeat: no-repeat;
+    background-position: 670px center;
+}
+h3{
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.timefee .timeset{
+    display: inline-block;
+    font-size: 20px;
+    color: #FF931E;
+    border: 1px solid #FF931E;
+    border-radius: 20px;
+    padding: 20px;
+    background-color:#FCFFF7 ;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+}
+.timefee ul li{
+    margin-bottom: 10px;
+    list-style-position: inside;
+}
+.timeset .time::before{
+content: url(../images/icon_time.svg);
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.timeset .fee::before{
+    content: url(../images/icon_ticket.svg);
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.chui{
+    padding-bottom: 120px;
+}
+.chui ul li{
+    margin-bottom: 10px;
+    list-style-position: inside;
+}
+@media (min-width: 768px) {
+body {
+    padding:151px 0 0;
+}
+main .about .midashi h2 {
+    line-height: 2;
+}
+}
+@media (min-width: 1200px) {
+body {
+    padding:183px 0 0;
+}
+.page_nav ul.flex{
+    justify-content: start;
+    gap: 2%;
+    margin: 0 0 50px;
+}
+.about .white{
+    margin: 50px 0 100px;
+}
+.about .midashi h2:last-child{
+    margin-top: 20px;
+}
+.about .midashi{
+    padding: 40px 0 60px;
+}
+.about .tate{
+    padding-top: 50px;
+}
+.about .engbox{
+    display: block;
+      background-position: 45px top,640px bottom;
+    padding: 15px 0  300px 460px;
+}
+.about .textbox{
+margin-top: -110px;
+    padding-left: 130px;
+    text-align: left;
+}
+.background-slide-in {
+    min-height: 200px;
+    margin: 50px 0; 
+}
+}
+@media (min-width: 1420px) {
+  .about .engbox{
+color: #EFFFFE;
+}  
+ div.inner{
+background-size: auto;
+    background-position: 250px 370px;
+}  
+.about .engbox{
+      background-position: 45px top,640px bottom;
+    padding: 15px 0  300px 460px;
+} 
+}
