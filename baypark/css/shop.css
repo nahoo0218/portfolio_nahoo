@@ -50,20 +50,12 @@ body {
     }
 
 }
-.nav2{
-    background-image: url(../images/bg_title.png);
-    background-repeat: no-repeat;
-    background-position: center 50px;
-    background-size: contain;
-}
 .shop_nav ul{
     padding-left: 36px;
     background-image: url(../images/finger.svg);
     background-repeat: no-repeat;
     background-position: left top;
 }
-
-
 .shop_nav ul li{
     font-size: 10px;
     font-weight: bold;
@@ -104,21 +96,16 @@ main section.flex{
     gap: 50px;
 }
 h2{
-
 font-size: 20px;
-     font-family: ads-namikaze, sans-serif;
+font-family: ads-namikaze, sans-serif;
 font-style: normal;
 font-weight: 400;
 letter-spacing: 2px;
-margin-bottom: 10px;
-        
+margin-bottom: 10px;       
 }
-
-
 h3{
     font-weight: normal;
     margin: 5px 0 7px;
-
 }
 section {
     padding-bottom: 100px;
@@ -150,13 +137,11 @@ main .box .time::before{
     vertical-align: middle;
     content: url(../images/shop_time.svg);
 }
-
 .arrow  {
     display: block;
   text-align: right;
   padding-right: 10px;
 }
-
 .shop_flex {
     display: flex;
     justify-content: center;
@@ -164,7 +149,6 @@ main .box .time::before{
     gap: 20px;
     margin-bottom: 40px;
 }
-
 .shop .title{
     font-size: 20px;
     line-height: 2;
@@ -179,17 +163,11 @@ font-weight: bold;
     margin: 60px 0 25px;
 }
 @media (min-width: 768px) {
-body {
-    padding:80px 0 0;
-}
 .shop_flex {
     justify-content: flex-start;
 }
 }
 @media (min-width: 1000px) {
-    body {
-    padding:160px 0 0;
-}
 main .shop{
     width: 920px;
     margin: auto;

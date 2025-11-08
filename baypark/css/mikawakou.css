@@ -1,17 +1,6 @@
 @charset "utf-8";
 
 main{
-   padding-top: 100px;
-     background-color: #EFFFFE;
-
-}
-.nav4{
-    background-image: url(../images/bg_title.png);
-    background-repeat: no-repeat;
-    background-position: center 50px;
-    background-size: contain;
-}
-main{
     line-height: 2.3;
     color: #173A59;
 
@@ -105,12 +94,8 @@ main span{
     font-weight: bold;
 }
 @media (min-width: 768px) {
-body {
-    padding:80px 0 0;
-}
 h2{ 
   font-size: 20px;
- 
 }
 }
 @media (min-width: 1000px) {
@@ -119,18 +104,11 @@ h2{
    margin-bottom: 30px;
     gap: 75px;
 }
-    body {
-    padding:160px 0 0;
-}
-
 }
 @media (min-width: 1350px) {
-    h2{ 
+h2{ 
   font-size: 36px;
-
-  
-}
-    main .title{
+}   main .title{
     background-image: url(../images/mikawakoumap.png);
     background-repeat: no-repeat;
     background-position: right top;

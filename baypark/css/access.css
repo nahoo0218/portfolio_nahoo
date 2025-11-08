@@ -76,15 +76,7 @@ dl.access_address_txt {
     gap: 8px;
     margin: 15px 0 0;
 }
-@media (min-width: 768px) {
-body {
-    padding:80px 0 0;
-}
-}
 @media (min-width: 1000px) {
-    body {
-    padding:160px 0 0;
-}
     .access_map {
         padding-top: 30%;
     }
@@ -103,9 +95,4 @@ body {
     .access_info {
         margin: 0;
     }
-}
-@media (min-width: 1200px) {
-body {
-    padding:163px 0 0;
-}
 }

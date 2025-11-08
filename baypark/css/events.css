@@ -146,13 +146,3 @@ h2{
     background-repeat: no-repeat;
     background-position: center top;
 }
-@media (min-width: 768px) {
-body {
-    padding:155px 0 0;
-}
-}
-@media (min-width: 1000px) {
-    body {
-    padding:180px 0 0;
-}
-}
