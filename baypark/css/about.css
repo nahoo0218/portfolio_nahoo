@@ -9,6 +9,9 @@ main .about .midashi h2 {
     line-height: 1.4;
     letter-spacing: 3px;
 }
+.nav02_wrap .nav1 a {
+    color: #fff;
+}
 video {
     display: block;
     margin: 0 0 0 auto;
@@ -138,11 +141,6 @@ main .about .midashi h2 {
 }
 }
 @media (min-width: 1200px) {
-.page_nav ul.flex{
-    justify-content: start;
-    gap: 2%;
-    margin: 0 0 50px;
-}
 .about .white{
     margin: 50px 0 100px;
 }
