@@ -4,7 +4,6 @@ body {
   color: #000;
   line-height: 1.5;
   font-family: "游ゴシック", "游ゴシック体", "Yu Gothic", sans-serif;
-  padding-top: 9%;
 }
 .inner {
   width: 80%;
@@ -28,20 +27,33 @@ header {
   z-index: 100;      
 }
 .header_02 {
-  background-color: #fff;
   position: fixed;
-  top: 0;
-  left: 0;
+  background-color: #fff;
+  padding: 0 0 20px;
+}
+/* 下層ページのナビ */
+.nav02 {
   width: 100%;
-  z-index: 999;
-  border-bottom:1px solid #FF931E;
+  position: fixed;
+  z-index: 100;
+  top: 50px;
+  text-align: center;
+}
+.nav02_scroll {
+  overflow: scroll;
 }
 .nav02_wrap {
-  line-height: 75px;
-  margin: auto;
-  padding: 0 0 10px;
+width: 500px;
+margin: auto;
+  padding:0px 20px 5px;
+  background-color: #FF931E;
+  border-radius: 50px;
+}
+.nav02_wrap a:hover {
+  color: #fff;
 }
 .nav02_wrap li {
+  padding: 5px 0 0;
   list-style: none;
   text-align: center;
 }
@@ -49,6 +61,50 @@ header {
   text-decoration: none;
   color: black;
 }
+@media (min-width: 480px) {
+  .nav02 {
+  top: 70px;
+}
+.nav02_wrap {
+  padding:5px 20px ;
+}
+}
+@media (min-width: 600px) {
+  .nav02 {
+  top: 85px;
+}
+.nav02_wrap {
+  padding:10px 20px 15px;
+}
+}
+@media (min-width: 900px) {
+
+  .header_02 {
+  background-color: #fff;
+  position: fixed;
+  border-bottom:1px solid #FF931E;
+  padding: 0 0 50px;
+}
+.nav02 {
+  width: 100%;
+  position: fixed;
+  top: 115px;
+  z-index: 100;
+  text-align: center;
+}
+.nav02_wrap {
+width: 900px;
+  padding:8px 40px 13px;
+  border-radius: 50px;
+}
+.nav02_scroll {
+  scrollbar-width: none;
+}
+.nav02_wrap li {
+  padding: 5px 0;
+}
+}
+/* ここまで */
 .js-text-animate {
   opacity: 0;
   transform: translateY(20px);
@@ -202,7 +258,6 @@ transition: 0.3s;
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-.nav02_wrap,
 .nav_wrap ul.flex {
   display: none;
 }
@@ -226,8 +281,23 @@ nav li a {
   color: #fff;
 }
 .main_02 {
-  padding: 50px 0 0;
+  padding: 80px 0 0;
   background-color: #EFFFFE;
+}
+@media (min-width: 400px) {
+  .main_02 {
+  padding: 90px 0 0;
+}
+}
+@media (min-width: 500px) {
+  .main_02 {
+  padding: 110px 0 0;
+}
+}
+@media (min-width: 600px) {
+  .main_02 {
+  padding: 130px 0 0;
+}
 }
 @media (min-width: 768px) {
 body {
@@ -326,8 +396,19 @@ h2 {
 .nav02_wrap {
   display: block;
 }
+.main_02 {
+  padding: 140px 0 0;
+}
+}
+@media (min-width: 900px) {
+  .main_02 {
+  padding: 170px 0 0;
+}
 }
 @media (min-width: 1290px) {
+    .main_02 {
+  padding: 180px 0 0;
+}
 body {
   font-size: 16px;
 }
@@ -395,6 +476,7 @@ h1{
     width: 100%;
   }
 }
+
 footer {
     background-color: #FF931E;
     padding-top: 40px;
