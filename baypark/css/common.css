@@ -24,7 +24,7 @@ header {
   top: 0;               
   left: 0;
   width: 100%;     
-  z-index: 100;      
+  z-index: 100;   
 }
 .header_02 {
   position: fixed;
@@ -270,7 +270,7 @@ width: 900px;
   transform: translateY(0);
 }
 h1 img {
-  width: 80%;
+  width: 100%;
 }
 h2 {
   font-size: 16px;
@@ -361,7 +361,7 @@ transition: 0.3s;
 /* ボタン本体 */
 .btn-trigger {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 15px;
   width: 50px;
   height: 50px;

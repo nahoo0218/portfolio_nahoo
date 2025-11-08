@@ -2,9 +2,10 @@
 /* ビジュアル */
 .visual {
     position: relative;
-    height: 250px;
+    height: 400px;
     overflow: hidden;
     background-color: #EFFFFE;
+    padding: 60px 0 0;
 }
 .visual-slider img {
     width: 100%;
@@ -30,6 +31,7 @@
 .visual-slider .slick-active img {
     transform: scale(1.1);
 }
+
 /* ミカンタワーお知らせ */ 
 .mikan_wrap_inner {
     width: 90%;
@@ -43,7 +45,7 @@
 .mikan_wrap {
     justify-content: flex-start;
     font-weight: bold;
-    margin: 50px auto 0;
+    margin: 200px auto 0;
 }
 .mikan_right_ttl {
     background-color: #FF931E;
@@ -157,6 +159,7 @@ h2 {
 }
 @media (min-width: 768px) {
     .visual {
+        padding: 0;
         height: 500px;
     }
     .mikan_wrap_inner {
