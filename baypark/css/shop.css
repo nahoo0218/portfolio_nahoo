@@ -155,19 +155,6 @@ main .box .time::before{
     gap: 35px;
     margin-bottom: 55px;
 }
-.title{
-    font-size: 20px;
-    line-height: 2;
-     color: #FF931E;
-    border-bottom: 1px solid #FF9C39;
-    border-top:  1px solid #FF9C39;
-    border-left: 7px solid #FF9C39;
-    border-right: 7px solid #FF9C39;
-font-weight: bold;
-    border-radius: 30px;
-    padding-left: 12px;
-    margin: 25px 0 40px;
-}
 @media (min-width: 586px) {
 .shop_flex {
     justify-content: flex-start;

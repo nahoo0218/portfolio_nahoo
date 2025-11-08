@@ -1,6 +1,4 @@
 @charset "utf-8";
-
-
 nav li a {
     text-decoration: none;
     color: black;
@@ -9,25 +7,11 @@ main{
    padding-top: 20px;
      background-color: #EFFFFE;
 }
-
 .nav3{
     background-image: url(../images/bg_title.png);
     background-repeat: no-repeat;
     background-position: center 50px;
     background-size: contain;
-}
-h2{
-    margin: 100px 0 30px;
-    font-size: 20px;
-    line-height: 2;
-    color: #FF931E;
-    border-bottom: 1px solid #FF9C39;
-    border-top:  1px solid #FF9C39;
-    border-left: 7px solid #FF9C39;
-    border-right: 7px solid #FF9C39;
-
-    border-radius: 30px;
-    padding-left: 12px;
 }
 .events_nav ul{
     padding-left: 36px;
@@ -35,7 +19,6 @@ h2{
     background-repeat: no-repeat;
     background-position: left top;
 }
-
 .events_nav ul li{
     font-size: 10px;
     font-weight: bold;
@@ -64,15 +47,19 @@ h2{
 .event_wrap{
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+    padding: 0 0 40px;
 }
 .event .box {
-
     background-color: #FCFFF7;
     border-radius: 20px;
     border: 1px solid #FF931E;
     padding: 14px 14px 10px;
   height: 280px;
+  transition: 0.5s;
+}
+.event .box:hover {
+ transform: translateY(-20px);
 }
 .event .box .flex {
     width: 272px; 
@@ -101,7 +88,7 @@ h2{
 }
 .event .info{
     width: 290px;
-    padding: 10px 0 50px 10px ;
+    padding: 10px 0 10px 10px ;
 }
 
 .event .info span{
@@ -125,7 +112,9 @@ h2{
     vertical-align: middle;
     content: url(../images/sankaku.svg);
 }
-
+.kako_wrap {
+    border-top: 1px solid #FF931E;
+}
 .event .kako li{
     list-style-position: inside;
     list-style-type: circle;
@@ -136,7 +125,7 @@ h2{
     color: #000;
 }
 .event .insta{
-    margin: 50px auto 60px;
+    margin:0 auto 40px;
     text-align: center;
     padding-top: 10px;
     font-size: 20px;
@@ -145,4 +134,30 @@ h2{
     background-image: url(../images/orange_bg.png);
     background-repeat: no-repeat;
     background-position: center top;
+}
+.insta_sp img {
+    display: block;
+    width: 100%;
+}
+.sns_wrap {
+    border-top: 1px solid #FF931E;
+    padding: 60px 0 0;
+    margin: 60px 0 0;    
+}
+@media (min-width: 768px) {
+.kako_wrap {
+    padding: 60px 0 0;
+}
+.event_wrap{
+    padding: 0 0 60px;
+}
+.insta_sp img {
+    display: block;
+    width: 40%;
+}
+}
+@media (min-width: 1000px) {
+    .event .info{
+    padding: 10px 0 50px 10px ;
+}
 }
