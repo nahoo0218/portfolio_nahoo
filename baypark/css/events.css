@@ -1,4 +1,7 @@
 @charset "utf-8";
+.nav02_wrap .nav3 a {
+    color: #fff;
+}
 nav li a {
     text-decoration: none;
     color: black;

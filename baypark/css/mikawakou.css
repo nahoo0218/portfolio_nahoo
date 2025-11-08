@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+.nav02_wrap .nav4 a {
+    color: #fff;
+}
 main{
     line-height: 2.3;
     color: #173A59;
