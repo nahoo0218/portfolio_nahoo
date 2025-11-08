@@ -5,14 +5,8 @@
 body {
     padding: 0;
 }
-.nav5{
-    background-image: url(../images/bg_title.png);
-    background-repeat: no-repeat;
-    background-position: center 50px;
-    background-size: contain;
-}
 .access_wrap {
-    padding: 40px 0 130px;
+    padding: 40px 0 60px;
 }
 
 .access {
@@ -80,6 +74,9 @@ dl.access_address_txt {
     margin: 15px 0 0;
 }
 @media (min-width: 1000px) {
+    .access_wrap {
+    padding: 40px 0 130px;
+}
     .access_map {
         padding-top: 30%;
     }
