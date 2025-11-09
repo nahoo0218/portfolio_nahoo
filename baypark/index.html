@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +44,7 @@
       <div class="right">
         <p class="font">JR三河駅から歩いて8分</p>
         <p>愛知県蒲郡市三河町２ ベイパーク三河</p>
-        <p>三河港観光協会<img src="images/face.png " alt="facebook"><img src="images/insta.png" alt="instagrum"></p>
+        <p>三河港観光協会<img src="images/insta.png" alt="instagrum"></p>
       </div>
     </div>
     <div class="humberger">
@@ -63,9 +64,18 @@
   </header>
   <div class="visual">
     <div class="visual-slider">
-      <div><img src="images/visual2.png" alt="スライド1"></div>
-      <div><img src="images/visual2.png" alt="スライド2"></div>
-      <div><img src="images/visual3.png" alt="スライド3"></div>
+      <picture class="visual_img">
+        <source srcset="images/top_sp.png" media="(max-width: 768px)" />
+        <img src="images/visual2.png" alt="サンプル画像" />
+      </picture>
+      <picture class="visual_img">
+        <source srcset="images/top_sp.png" media="(max-width: 768px)" />
+        <img src="images/visual2.png" alt="サンプル画像" />
+      </picture>
+      <picture class="visual_img">
+        <source srcset="images/top_sp.png" media="(max-width: 768px)" />
+        <img src="images/visual3.png" alt="サンプル画像" />
+      </picture>
     </div>
     <div class="mikan_wrap_inner flex">
       <div class="mikan_wrap flex">
@@ -79,12 +89,13 @@
             <p class="m_24h">タワーを除く公園エリアは24時間ご利用いただけます</p>
           </div>
         </div>
-        <div class="mikan_map"><a href="shop/shop.html"><span class="area_txt">エリア<br>マップ</span><img src="images/icon_map.svg"></a></div>
+        <div class="mikan_map"><a href="shop/shop.html"><span class="area_txt">エリア<br>マップ</span><img
+              src="images/icon_map.svg"></a></div>
       </div>
       <picture class="sns_btn">
-  <source srcset="images/sns.png" media="(min-width: 1000px)" />
-  <img src="images/sns_sp.png" alt="サンプル画像"/>
-</picture>
+        <source srcset="images/sns.png" media="(min-width: 1000px)" />
+        <img src="images/sns_sp.png" alt="サンプル画像" />
+      </picture>
       <!-- <figure class="sns_btn"><a href="#"><img src="images/sns.png"></a></figure> -->
     </div>
   </div>
