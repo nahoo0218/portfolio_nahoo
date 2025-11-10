@@ -19,13 +19,6 @@ video {
 .video video {
     width: 100%;
 }
-div.inner{
-    background-image: url(../images/about_bg.svg);
-    background-repeat: no-repeat;
-    background-position: 250px 370px;
-    background-size: 55%;
-
-}
 .about .tate{
     display: flex;
     justify-content: end;
@@ -80,7 +73,6 @@ div.inner{
 .about .textbox{
     font-size: 18px;
     letter-spacing: 2px;
-    color: #405D88;
     line-height: 2.4;
     text-align: center;
 }
@@ -101,10 +93,12 @@ display: none;
     color: transparent;
 }
 .timefee {
-    padding: 80px 0;
-    background-image: url(../images/about_mikan.png);
-    background-repeat: no-repeat;
-    background-position: 670px center;
+    padding: 0 0 40px;
+    margin: 40px auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border-bottom: 1px solid #FF931E;
 }
 h3{
     font-weight: normal;
@@ -139,13 +133,27 @@ content: url(../images/icon_time.svg);
     padding-right: 5px;
 }
 .chui{
-    padding-bottom: 120px;
+    padding-bottom: 60px;
 }
 .chui ul li{
     margin-bottom: 10px;
     list-style-position: inside;
 }
+.about {
+    margin: -15px 0 0;
+    background-color: #fff;
+}
+.wave {
+    margin-top: -70px;
+}
 @media (min-width: 768px) {
+    .wave {
+    margin-top: -100px;
+}
+.about {
+    margin: -80px 0 0;
+    background-color: #fff;
+}
     main .about .midashi h2 {
     font-size: 18px;
 }
@@ -161,11 +169,27 @@ content: url(../images/icon_time.svg);
 .video_wrap {
     flex-wrap: nowrap;
 }
+.chui{
+    padding-bottom: 120px;
+}
 main .about .midashi h2 {
     line-height: 2;
 }
+.timefee {
+     flex-direction: row;
+    padding: 0 0 80px;
+    margin: 80px auto;
+    border-bottom: 1px solid #FF931E;
+}
 }
 @media (min-width: 1200px) {
+    .about {
+    margin: -110px 0 0;
+    background-color: #fff;
+}
+    .wave {
+     margin-top: -200px;
+}
 .about .white{
     margin: 80px 0 100px;
 }
@@ -173,7 +197,7 @@ main .about .midashi h2 {
     margin-top: 20px;
 }
 .about .midashi{
-    padding: 40px 0 60px;
+    padding: 40px 0 20px;
 }
 .about .tate{
     padding-top: 50px;
@@ -184,13 +208,11 @@ main .about .midashi h2 {
     padding: 15px 0  300px 460px;
 }
 .about .textbox{
-margin-top: -110px;
-    padding-left: 130px;
     text-align: left;
 }
 .background-slide-in {
     min-height: 200px;
-    margin: 50px 0; 
+    margin: 30px 0 0; 
 }
 }
 @media (min-width: 1420px) {
