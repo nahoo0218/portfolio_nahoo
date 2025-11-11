@@ -18,6 +18,7 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+
 header {
   background-color: #EFFFFE;
   position: fixed;     
@@ -277,7 +278,7 @@ h2 {
 }
 .open,
 h1,
-.right {
+.adress {
 width: calc(100%/3);
 text-align: center;
 }
@@ -290,23 +291,23 @@ text-align: center;
   background-size: contain;
   background-position: center top;
 }
-.right{
+.adress{
   font-size: 8px;
   padding-top: 8px;
 }
-.right img{
+.adress img{
   width: 14.5%;
   display: inline-block;
   vertical-align: middle;
   padding-left: 4px;
 }
-.right .font{
+.adress .font {
   display: none;
 }
-.right p{
+.adress p{
   text-align: right;
 }
-.right .font::before{
+.adress .font::before{
   content: '';
   display: inline-block;
   width: 15px;
@@ -315,7 +316,7 @@ text-align: center;
   background-size: contain;
   vertical-align: middle;
 }
-.right .font::after{
+.adress .font::after{
    content: '';
   display: inline-block;
   width: 15px;
@@ -481,35 +482,35 @@ h1 img {
 }
 .open,
 h1,
-.right {
+.adress {
 width: calc(100%/3);
 text-align: center;
 }
-header .open{
+.open{
 padding: 7px 0 0;
 text-align: center;
 background-image: url(../images/flag.png);
 background-repeat: no-repeat;
 background-position: center top;
 }
-header .right {
+.adress {
   font-size: clamp(8px,1.1vw,14px);
   padding-top: 8px;
 }
-header .right img {
+.adress img {
   width: 12%;
   display: inline-block;
   vertical-align: middle;
   padding-left: 4px;
 }
-header .right .font {
+.adress .font {
   display: block;
   margin-bottom: 8px;
 }
-header .right p{
+.adress p{
   text-align: right;
 }
-header .right .font::before{
+.adress.font::before{
   content: '';
   display: inline-block;
   width: 15px;
@@ -518,7 +519,7 @@ header .right .font::before{
   background-size: contain;
   vertical-align: middle;
 }
-header .right .font::after{
+.adress .font::after{
    content: '';
   display: inline-block;
   width: 15px;
@@ -581,13 +582,13 @@ h2 {
   letter-spacing: 4px;
   line-height: 1.5;
 }
-header .right{
+.adress{
   font-size: 14px;
 }
-header .right img {
+.adress img {
   width: auto;
 }
-header .right .font{
+.adress .font {
   font-size: 16px;
 }
 nav ul li:hover,
