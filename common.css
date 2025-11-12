@@ -146,6 +146,7 @@ background-image: linear-gradient(0deg, #497f47c2, #7bff6ef5 0%, #eaf5e7 48%);
 font-size: 30px;
 }
 figcaption {
+  text-align: center;
   font-size: 14px;
 }
 @media (min-width: 768px) {
