@@ -455,7 +455,8 @@ background-color: #7A118B;
 }
 .apper_img img {
   display: block;
-  width: 100%;
+  width: 70%;
+  margin: auto;
 }
 .apper_box_wrap {
   display: flex;
