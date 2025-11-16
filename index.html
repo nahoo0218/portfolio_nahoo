@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>松川奈穂のポートフォリオ</title>
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="common.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="pagetop.js"></script>
+  <script src="slide.js"></script>
+  <script src="slidebtn.js"></script>
+  <script src="slide_sub.js"></script>
   <script>
     (function (d) {
       var config = {
@@ -16,98 +22,189 @@
         h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="js/pagetop.js"></script>
 </head>
 
 <body>
   <header>
-    <h1 class="header_ttl"><ruby>松川奈穂<rt>マツカワナホ</rt></ruby>のポートフォリオ</h1>
+    <div class="header_wrap">
+      <h1 class="header_ttl">Naho Matsukawa<br>PORT<span class="mark">F</span>OLIO</h1>
+      <div class="contact_wrap">
+        <a href="mailto:sea0218salt@icloud.com" class="contact">contact</a>
+      </div>
+    </div>
   </header>
   <main>
     <div class="sec_menu">
       <ul class="menu_box_wrap">
         <li class="menu_box">
           <a href="#self">
-          <div class="menu_box_inner">
-            <p class="self_txt">好きな食べ物は<br>エビフライです。</p>
-            <img class="menu_self" src="self_img_01.png" alt="自己紹介顔">
-            <p class="self_greeting">Hi</p>
-          </div>
+            <div class="menu_box_inner">
+              <p class="self_txt">好きな食べ物は<br>エビフライです。</p>
+              <img class="menu_self" src="self_img_01.png" alt="自己紹介顔">
+              <p class="self_greeting">Hi</p>
+            </div>
           </a>
         </li>
         <li class="menu_box">
           <a href="#product">
-          <div class="menu_box_inner"></div>
+            <div class="menu_box_inner"></div>
           </a>
         </li>
       </ul>
-      <div class="dl_warp">
-    <a href="mailto:sea0218salt@icloud.com" class="dl_warp_txt">contact</a>
-    </div>
+
       <div class="scrool">
         <figure><img src="scroolbar.png" alt="scrool"></figure>
       </div>
     </div>
+    <figure class="wave_test"><img src="wave_test.png"></figure>
     <section class="sec_self" id="self">
-      <div class="sec_wrap sec_self_inner">
-        <div class="self_ttl_wrap">
-          <h2>自己紹介</h2>
-          <p class="self_name">松川奈穂</p>
-          <p class="self_name_eng">matukawa naho</p>
+      <div class="sec_self_inner">
+        <h2>About<span class="mark"> me</span></h2>
+        <div class="yu_gothic speechBubble_wrap">
+          <p class="speechBubble">「使いやすさ」を極め、「らしさ」をデザイン。確かな技術でカタチにしたい！</p>
         </div>
-        <div class="self_desc">
+        <div class="self_wrap">
           <figure class="self_img_01"><img src="self_img_01.png" alt="自己紹介写真"></figure>
-          <p class="self_desc_txt yu_gothic">愛知県岡崎市出身、国分寺市在住。大きな公園と引っ越し（手伝い）、手芸全般が好きです。<br>オタク気質ですが、ミーハーな部分もあります。</p>
-          <figure class="self_img_02"><img src="self_img_02.png" alt="自己紹介写真２"><figcaption>夏季は毎週末のように<br>多摩川へ（青梅市）</figcaption></figure>
-        </div>
-        <div class="sec_self_carrer">
-          <div class="carrer_theme">
-            <h3>経歴</h3>
+          <div class="self_desc">
+            <p class="self_name"><span class="yu_gothic">松川奈穂</span><span class="self_name_eng">matukawa naho</span></p>
+            <p class="self_desc_txt yu_gothic">
+              愛知県岡崎市出身、国分寺市在住。<br>
+              前職では、港湾・空港専門誌の記者として取材・執筆をメインに、校正やレイアウト業務を担当。その過程で、複雑な情報やクライアントの要望を、「文章」だけでなく、図やフォントなど、より「視覚的な表現」で伝える重要性を強く意識するように。<br>この経験から、グラフィック表現やデジタル技術を用いた表現に挑戦したいと考え、職業訓練校でWEBデザインを学習。<br>
+              現在は、前職で培った情報整理力と正確性を活かし、「機能的」で、ユーザーの課題解決につながる「幅のあるデザイン」を、堅実な技術をもって実装できるWEBデザイナー・エンジニアを目指しています。
+
           </div>
-          <dl class="self_carrer_wrap">
-            <dt class="carrer_month month_blue"><span>３月</span></dt>
-            <dd class="carrer_txt yu_gothic">名古屋外国語大学 英米語学部 英語コミュニケーション専攻卒業</dd>
-            <dt class="carrer_month month_blue"><span>11月</span></dt>
-            <dd class="carrer_txt yu_gothic">（株）都市計画通信社に入社。港や空港に関する専門誌の記事の作成（<a href="times.pdf" target="_blank" rel="noopener noreferrer">取材・スチール撮影・執筆＜過去記事＞</a> ）、校正作業を担当する。2025年4月に退職。</dd>
-            <dt class="carrer_month month_pink"><span>７月</span></dt>
-            <dd class="carrer_txt yu_gothic">職業訓練校（早稲田電子IT教育センター・WEBサイトデザイン科【実習付き4か月コース】）で3か月間、フロント言語、デザインに関するスキルを学ぶ。
-            </dd>
-            <dt class="carrer_month month_pink"><span>10月</span></dt>
-            <dd class="carrer_txt yu_gothic">株式会社パットンファイブで20日間の実習を受ける。実サイトのページ作成（HTML、CSS、Jwuerｙ）及び更新（ワードプレス）を経験する。 </dd>
-            <dt class="carrer_month month_pink"><span>現在</span></dt>
-            <dd class="carrer_txt yu_gothic">ウェブデザイナー、フロントエンジニアを目指し求職活動中</dd>
-          </dl>
         </div>
-      </div>
+        <div class="self_menu_wrap">
+          <div class="self_menu_sec">
+            <p class="menu_sec_ttl">Skills<span class="indent">できること</span></p>
+            <p class="menu_sec_ttl">Carrer<span class="indent">経歴</span></p>
+            <p class="menu_sec_ttl">Strong<span class="indent">アピールポイント</span></p>
+          </div>
+          <div class="self_menu_arrow"><img src="arrow_self.svg"></div>
+          <div class="self_menu_button">
+            <p class="button">View more</p>
+          </div>
+        </div>
+        <div class="self_hidden">
+          <div class="close_btn" id="toggleButton">クローズ</div>
+          <div class="sec_self_box">
+            <div class="carrer_theme">
+              <p class="menu_sub_ttl">Skills<span class="small">できること</span></p>
+              <div class="icon_wrap">
+                <img src="html.png" alt=""><img src="css.png" alt="">
+                <img src="javascript.png" alt=""><img src="wordpress.png" alt="">
+                <img src="figma.png" alt=""><img src="illustrator.png" alt="">
+                <img src="photoshop.png" alt="">
+              </div>
+              <dl class="skill_wrap yu_gothic">
+                <dt class="mark">HTML/CSS</dt>
+                <dd>規則性のあるコーディングを行うことができます。Visual Studio Codeを使用.。
+                </dd>
+                <dt class="mark">JavaScript</dt>
+                <dd>jQueryを使用して動きを加えることができます。</dd>
+                <dt class="mark">Wordpress</dt>
+                <dd>管理画面上で更新ができます。CMS化を独学で勉強中です。</dd>
+                <dt class="mark">Figma</dt>
+                <dd>オートレイアウト機能等を使い、スムーズにデザインカンプを作れます。</dd>
+                <dt class="mark">Illustrator</dt>
+                <dd>ロゴを作成できます。イラストの描画を勉強中です。</dd>
+                <dt class="mark">Photoshop</dt>
+                <dd>画像の補正、簡単なバナーを作成できます。
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="carrer_wrap">
+            <div class="carrer_box">
+              <div class="sec_self_box">
+                <div class="carrer_theme">
+                  <p class="menu_sub_ttl">Carrer<span class="small">経歴</span></p>
+                </div>
+                <dl class="self_carrer_wrap">
+                  <dt class="carrer_month month_blue"><span>３月</span></dt>
+                  <dd class="yu_gothic">名古屋外国語大学 英米語学部 英語コミュニケーション専攻卒業</dd>
+                  <dt class="carrer_month month_blue"><span>11月</span></dt>
+                  <dd class="carrer_txt yu_gothic">（株）都市計画通信社<span class="small_indent">港や空港に関する専門誌の記事の作成（<a
+                        href="times.pdf" target="_blank" rel="noopener noreferrer">取材・スチール撮影・執筆＜過去記事を見る＞</a>
+                      ）、校正作業を担当する。<br>2025年4月に退職。</span></dd>
+                  <dt class="carrer_month month_pink"><span>７月</span></dt>
+                  <dd class="carrer_txt yu_gothic">早稲田電子IT教育センター・WEBサイトデザイン科（職業訓練校【実習付き4か月コース】）<span
+                      class="small_indent">3か月間、フロント言語、デザインに関するスキルを学ぶ。</span>
+                  </dd>
+                  <dt class="carrer_month month_pink"><span>10月</span></dt>
+                  <dd class="carrer_txt yu_gothic">（株）パットンファイブ<span
+                      class="small_indent">１か月間の実習を通して、実サイトのページ作成（HTML、CSS、Jwuerｙ）及び更新（ワードプレス）を経験する。</span>
+                  </dd>
+                  <dt class="carrer_month month_pink"><span>現在</span></dt>
+                  <dd class="yu_gothic">ウェブデザイナー、フロントエンジニアを目指し求職活動中</dd>
+                </dl>
+              </div>
+              <div class="sec_self_box">
+                <div class="carrer_theme">
+                  <p class="menu_sub_ttl">Apper<span class="small">強み</span></p>
+                </div>
+                <div class="apper_box_wrap">
+                  <div class="apper_box yu_gothic">
+                    <p class="apper_ttl">じっくり、コツコツ進める</p>
+                    <figure class="apper_img"><img src="noimage.jpg"></figure>
+                    <p class="apper_txt">
+                      週刊誌編集で鍛えた<span class="mark">ペース管理能力</span>を活かし、一つひとつの仕事を「正確かつ丁寧」に対応します。締切を守りながらも、<span class="mark">クオリティを追求</span>します。
+                    </p>
+                  </div>
+                  <div class="apper_box yu_gothic">
+                    <p class="apper_ttl">よく話し、よく聴く</p>
+                    <figure class="apper_img"><img src="noimage.jpg"></figure>
+                    <p class="apper_txt">課題解決に向けて自分の意見をきちんと伝えつつ、<span class="mark">相手の意図を正確に受け取るコミュニケーション</span>を大切にしています。</p>
+                  </div>
+                  <div class="apper_box yu_gothic">
+                    <p class="apper_ttl">情報収集家</p>
+                    <figure class="apper_img"><img src="noimage.jpg"></figure>
+                    <p class="apper_txt">記者職での経験から、1つの問題に対して<span class="mark">幅広く情報を集め、論理的に整理する</span>ことが得意です。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
     </section>
+    <figure class="wave_test"><img src="wave_test2.png"></figure>
     <section class="sec_product sec_wrap" id="product">
-      <h2>制作物</h2>
-      <div class="product_ttl_wrap">
-        <div class="product_ttl"><span class="product_ttl_box">開発系使用言語</span><span class="yu_gothic product_txt">HTML、CSS、JQuery</span></div>
-        <div class="product_ttl"><span class="product_ttl_box">使用ツール</span><span class="yu_gothic product_txt">photoshop、Illustrator、Figma</span></div>
-      </div>
+      <h2><span class="mark">W</span>orks</h2>
       <div class="product_contents_wrap">
         <div class="product_contents">
-          <p class="product_contents_ttl">海浜公園「ベイパーク三河」WEBサイト（架空）</p>
           <a href="./baypark/index.html" target="_blank" rel="noopener noreferrer">
             <figure class="product_contents_img"><img src="website_01.jpg" alt="ベイパーク三河"></figure>
           </a>
-          <p class="product_contents_design"><a href="baypark_slide.pdf">＜デザインカンプ・概要を見る</a></p>
+          <div class="product_contents_desc yu_gothic">
+            <p class="product_contents_ttl">海浜公園「ベイパーク三河」WEBサイト（架空）</p>
+            <p class="product_contents_txt">職業訓練校の個人制作課題（約2週間）で制作した、架空の海浜公園サイトです。<br>優先度の高い情報にスムーズにアクセスできるよう設計し、施設の魅力が一目で伝わるよう、効果的に画像を差し込み、要所にキャッチコピーを配置しました。公園の雰囲気にあわせたボタンや背景素材も一から作成しています。<br>また、どの画面幅でも快適に閲覧できるよう、レスポンシブ対応にも注力しました。<br>
+            <p class="product_btn_wrap"><a class="product_btn" href="./baypark/index.html">サイトを見る</a></p>
+            <p class="product_contents_design"><a href="baypark_slide.pdf"><span class="mark">＞</span>制作概要（pdf）を見る</a>
+            </p>
+          </div>
         </div>
-        <div class="product_contents">
-          <p class="product_contents_ttl">「アリス探偵事務所」WEBサイト（架空）</p>
+        <div class="product_contents yu_gothic">
           <a href="./alice/index.html" target="_blank" rel="noopener noreferrer">
             <figure class="product_contents_img"><img src="website_02.jpg" alt="アリス探偵事務所"></figure>
           </a>
-          <p class="product_contents_design"><a href="#">＜デザインカンプ・概要を見る</a></p>
+          <div class="product_contents_desc">
+            <p class="product_contents_ttl">「アリス探偵事務所」WEBサイト（架空）</p>
+            <p class="product_contents_txt">グループ制作課題（約2週間、3名で制作）として制作した架空サイトです。私はロゴ制作とマークアップを担当しました。<br>
+制作では、クラス名や命名規則を統一し、チーム内でのコーディングルールを徹底することで、誰が見ても理解しやすいコードを心掛けました。<br>また、レスポンシブデザインを意識して、異なる画面幅でも見やすいレイアウトに調整しています。</p>
+            <p class="product_btn_wrap"><a href="./alice/index.html" class="product_btn">サイトを見る</a></p>
+            <p class="product_contents_design"><a href="baypark_slide.pdf"><span class="mark">＞</span>制作概要（pdf）を見る</a>
+            </p>
+          </div>
         </div>
-        <div class="product_contents">
-          <p class="product_contents_ttl">制作素材・パーツ<br>まとめ</p>
-          <a href="parts.pdf" target="_blank" rel="noopener noreferrer">
+        <div class="product_contents yu_gothic">
+          <a href="./alice/index.html" target="_blank" rel="noopener noreferrer">
             <figure class="product_contents_img"><img src="website_03.jpg" alt="アリス探偵事務所"></figure>
           </a>
-          <p class="product_contents_design"><a href="#">＜デザインカンプ・概要を見る</a></p>
+          <div class="product_contents_desc">
+            <p class="product_contents_ttl">制作素材・パーツまとめ</p>
+            <p class="product_contents_txt">これまでにillistrater・photoshop・Figma、生成AIを使用して作成した素材をまとめました。
+            </p>
+            <p class="product_btn_wrap"><a class="product_btn" href="parts.pdf" target="_blank"
+                rel="noopener noreferrer">概要を見る</a></p>
+          </div>
         </div>
       </div>
     </section>
@@ -115,6 +212,7 @@
   <footer>
     <div class="copy_right">matsukawa naho's portpholio</div>
   </footer>
-<figure class="page_top" id="page_top"><a href="index.html"><img src="page_top.png" alt="ページトップ"></a></figure>
+  <figure class="page_top" id="page_top"><a href="index.html"><img src="page_top.png" alt="ページトップ"></a></figure>
 </body>
+
 </html>
