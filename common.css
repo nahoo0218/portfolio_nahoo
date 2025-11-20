@@ -336,6 +336,9 @@ width: 85%;
   justify-content: space-between;
 }
 .menu_sec_ttl {
+  color: #2C343A;
+  display: block;
+  text-decoration: none;
   font-size: 18px;
   text-align: center;
   letter-spacing: 2px;
@@ -395,13 +398,13 @@ width: 85%;
   cursor: pointer;
 }
 .self_menu_button:hover .button {
-    color: #FFFBF8;
-background-color: #7A118B;
+transform: scale(1.1);
 }
 .button {
-  color: #7A118B;
   font-size: 24px;
   border-radius: 50px;
+  background-color: #7A118B;
+  color: #fff;
   border:1px solid #7A118B;
   padding: 5px 25px 5px;
   letter-spacing: 3px;
@@ -540,7 +543,8 @@ background-color: #7A118B;
    font-size: 24px;
 }
 .self_menu_sec {
-  width: 50%;
+  width: 55%;
+  gap: 80px;
 }
 .speechBubble::after {
     left: 7%;
@@ -552,10 +556,27 @@ background-color: #7A118B;
 .self_menu_wrap {
   flex-direction: row;
   margin: 100px 0 0;
-  gap: 60px;
+  justify-content: space-between;
 }
 .menu_sec_ttl {
   font-size: 32px;
+  width: calc((100% - 90px)/3);
+  height: 200px;
+  border: 1px solid #7A118B;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+.menu_sec_ttl:hover{
+ transform: translateY(-20px);
+}
+.menu_sec_ttl:hover .button {
+transform: scale(1.1);
+}
+.menu_sec_ttl:hover {
+background-image: linear-gradient(0deg, #7A118B, #a77aad 0%, #fff 35%);
+}
+.menu_sec_ttl  p {
+margin: 40px 0 0;
 }
 .self_carrer_wrap dt:nth-of-type(2),.self_carrer_wrap dd:nth-of-type(2) {
  padding: 40px 0 30px;
