@@ -22,7 +22,6 @@ header {
 }
 .mark {
   color: #7A118B;
-
 }
 .contact {
   letter-spacing: 2px;
@@ -485,6 +484,10 @@ background-color: #7A118B;
   text-align: center;
   padding: 0 25px;
 }
+.apper_box:nth-child(2) {
+  border-left: 1px solid #7A118B;
+  border-right: 1px solid #7A118B;
+}
 .apper_ttl {
   font-size: 18px;
   font-weight: bold;
@@ -707,10 +710,19 @@ width: 65%;
   width: 90%;
   margin: auto;
  }
-
+.indent_illustrator {
+  display: block;
+  margin: 20px 0 0;
+}
+.indent_illustrator img {
+  margin: 0 0 0 20px ;
+}
  .skill_wrap dt,.skill_wrap dd {
   padding: 25px 0;
   border-bottom:1px dotted #2C343A;
+ }
+ .skill_wrap dt:last-of-type,.skill_wrap dd:last-child {
+ border: none; 
  }
    .skill_wrap dt {
     letter-spacing: 2px;
