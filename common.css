@@ -549,7 +549,14 @@ vertical-align: middle;
 .carrer_month:last-of-type span::after {
   display: none;
 }
-
+.contents_txt_star {
+  font-size: 14px;
+  margin: 0 0 30px;
+  color: #7A118B;
+}
+.indent_star {
+  display: block;
+}
 @media (min-width: 768px) {
   h2 {
     font-size: 48px;
@@ -637,6 +644,8 @@ width: 65%;
   font-size: 18px;
   margin: 15px 0 0;
   text-align: center;
+  border-bottom:1px solid #7A118B;
+  padding: 0 0 10px;
 }
 .product_contents_img img {
   display: block;
