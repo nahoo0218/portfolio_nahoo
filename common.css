@@ -714,6 +714,10 @@ width: 65%;
   display: block;
   margin: 20px 0 0;
 }
+.indent_photoshop {
+  display: block;
+  margin: 40px 0 0;
+}
 .indent_illustrator img {
   margin: 0 0 0 20px ;
 }
