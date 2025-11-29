@@ -1,7 +1,7 @@
 // jQueryコード
 $(function() {
   // 1. 非表示にするスクロール位置 (ピクセル)
-  const hidePosition = 2800; 
+  const hidePosition = 4800; 
   // 2. 表示を開始するスクロール位置 (ピクセル) 👈 新しい定数を追加
   const showPosition = 1000;
   
