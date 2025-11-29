@@ -66,15 +66,15 @@ header {
   position: relative;
 }
 .menu_box:first-child::after{
-content: "About me ↑";
+content: "About me";
 color: #7A118B;
-font-size: 38px;
+font-size: 28px;
 padding: 0 0 0 20px;
 }
 .menu_box:last-child::before {
-content: "Works ↓";
+content: "Works";
 color: #7A118B;
-font-size: 38px;
+font-size: 28px;
 padding: 0 0 0 20px;
 
 }
@@ -86,6 +86,7 @@ padding: 0 0 0 20px;
 .menu_box {
   list-style: none;
   width: 85%;
+  padding: 30px 0;
   margin: auto;
   transition: 2s;
 }
@@ -238,14 +239,18 @@ margin: 70px 0 0;
 }
 .scrool {
   top: 440px;
-  left: 8%;
+  left: 5%;
 }
 .self_menu_arrow {
   display: block;
 }
+.self_menu_arrow img {
+  display: block;
+  width: 60%;
+}
 }
 .sec_wrap {
-  width: 80%;
+  width: 85%;
   margin: auto;
   padding: 60px 0 100px;
 }
@@ -266,7 +271,6 @@ h2 {
   font-weight: normal;
 }
 .speechBubble {
-  width: 80%;
    font-size: 18px;
   position: relative;
   display: inline-block;
@@ -314,9 +318,6 @@ h2 {
 .self_img_01 {
   width: 220px;
   text-align: center;
-}
-.self_desc {
-width: 85%;
 }
 .self_desc_txt {
   margin: 30px 0 0;
@@ -409,7 +410,6 @@ width: 85%;
 .self_menu_button {
   transition: 0.5s;
   cursor: pointer;
-  width: 185px;
 }
 .self_menu_button:hover .button {
 transform: scale(1.1);
@@ -423,6 +423,7 @@ transform: scale(1.1);
   padding: 5px 25px 5px;
   letter-spacing: 3px;
   transition: 0.3s;
+  width: 180px;
 }
 .product_btn {
     color: #7A118B;
@@ -509,7 +510,6 @@ background-color: #7A118B;
   display: block;
   border: 1px solid #7A118B;
   padding: 15px 25px;
-  border-radius: 50px;
 }
 .ear::before {
 content: url(emoji_ear.svg);
@@ -560,6 +560,10 @@ vertical-align: middle;
 .indent_star {
   display: block;
 }
+.sec_self_inner {
+  width: 85%;
+  margin: auto;
+}
 @media (min-width: 768px) {
   h2 {
     font-size: 48px;
@@ -577,12 +581,11 @@ vertical-align: middle;
   padding: 60px 0 100px;
 }
 .speechBubble {
-  width: 90%;
    font-size: 24px;
 }
 .self_menu_sec {
-  width: 60%;
-  gap: 80px;
+  width: 100%;
+  gap: 20px;
 }
 .speechBubble::after {
     left: 7%;
@@ -592,7 +595,6 @@ vertical-align: middle;
   gap: 60px;
 }
 .self_menu_wrap {
-  width: 95%;
   flex-direction: row;
   margin: 100px auto 0;
   justify-content: space-between;
@@ -636,8 +638,17 @@ margin: 40px 0 0;
 width: 65%;
 }
 }
+@media (min-width: 1200px) {
+.self_menu_arrow img{
+  width: 100%;
+}
+.self_menu_sec {
+  gap: 80px;
+  width: 60%;
+}
+}
 .product_contents {
-  padding: 30px 0;
+  padding: 40px 0 60px;
   border-bottom: 1px solid #7A118B;
   display: flex;
   flex-direction: column;
