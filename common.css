@@ -592,7 +592,7 @@ vertical-align: middle;
 }
 .self_wrap {
   flex-direction: row;
-  gap: 60px;
+  gap: 10px;
 }
 .self_menu_wrap {
   flex-direction: row;
